@@ -1,0 +1,28 @@
+# Requisitos Funcionais — Controle de EPI's e Estoque
+
+**Autenticação**
+- RF01: Sistema deve ter tela de login (email/senha via Better Auth).
+- RF02: Deve existir um usuário mestre (role "admin") capaz de criar novos usuários (role "operador").
+- RF03: Usuários "operador" podem operar o sistema, mas não criar outros logins.
+
+**Cadastro de EPIs**
+- RF04: Cadastrar EPI com código, nome, CA, validade, marca, unidade e quantidade inicial.
+- RF05: Editar e listar EPIs cadastrados, com busca por nome, código ou CA.
+
+**Cadastro de Funcionários**
+- RF06: Cadastrar funcionário com nome e setor (matrícula opcional).
+- RF07: Listar e editar funcionários cadastrados.
+
+**Movimentação de Estoque**
+- RF08: Registrar entrada de EPI (soma ao saldo), sem vínculo com funcionário.
+- RF09: Registrar saída de EPI vinculada a um funcionário (subtrai do saldo).
+- RF10: Impedir saída com quantidade maior que o saldo disponível.
+- RF11: Toda movimentação registra quem operou (usuário logado) e a data.
+
+**Consulta de Estoque**
+- RF12: Tela com saldo atual de todos os EPIs.
+- RF13: Histórico de movimentações por EPI e por funcionário.
+
+**Fase 2 (não incluído nesta versão)**
+- RF14: Exportação de relatórios em Excel formatado (movimentações, saldo, entregas por funcionário).
+- RF15: Importação de lista de funcionários e EPIs a partir da planilha Excel existente.

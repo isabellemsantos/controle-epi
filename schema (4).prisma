@@ -1,0 +1,19 @@
+# Controle de EPI's e Estoque
+
+Mini projeto para cadastro de EPIs (com CA) e controle de entrada/saída de estoque, com registro de entregas por funcionário.
+
+**Stack:** Next.js (App Router) + Prisma (SQLite) + Better Auth + shadcn/ui + Tailwind. Deploy via Docker/EasyPanel.
+
+## Estrutura deste repositório
+
+- `prisma/schema.prisma` — modelo do banco de dados
+- `docs/requisitos-funcionais.md` — requisitos funcionais do sistema
+- `docs/prompt-kickoff-claude-code.md` — prompt para gerar o projeto com Claude Code
+- `docs/prompt-google-stitch.md` — prompt para gerar o protótipo visual no Google Stitch
+
+## Próximos passos
+
+1. Rodar o prompt de kickoff no Claude Code para gerar o código do projeto
+2. Gerar o protótipo visual no Google Stitch
+3. Importar dados da planilha existente (EPIs e funcionários) — fase 2
+4. Exportação de relatórios em Excel — fase 2
